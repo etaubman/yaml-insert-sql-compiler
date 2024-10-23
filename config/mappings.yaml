@@ -1,0 +1,18 @@
+# config/mappings.yaml
+
+table_mappings:
+  process_flow:
+    table_name: process_flows
+    fields:
+      id: id
+      name: name
+      description: description
+      rule_content: rule_content
+
+  task:
+    table_name: tasks
+    fields:
+      task_id: task_id
+      task_name: task_name
+      task_description: task_description
+      task_rule: task_rule

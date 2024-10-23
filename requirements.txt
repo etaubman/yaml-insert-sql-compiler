@@ -1,0 +1,4 @@
+PyYAML
+Click
+Jinja2
+jsonschema

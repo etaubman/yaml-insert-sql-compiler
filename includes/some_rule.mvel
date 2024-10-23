@@ -1,0 +1,5 @@
+// some_rule.mvel
+
+if (condition) {
+    // Do something
+}

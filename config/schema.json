@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "table": { "type": "string" },
+    "fields": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "values": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          { "type": "string" },
+          { "type": "number" },
+          {
+            "type": "object",
+            "properties": {
+              "include": { "type": "string" },
+              "raw": { "type": "string" }
+            },
+            "required": ["include"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "raw": { "type": "string" }
+            },
+            "required": ["raw"]
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "comment": { "type": "string" }
+      }
+    }
+  },
+  "required": ["table", "fields", "values"]
+}

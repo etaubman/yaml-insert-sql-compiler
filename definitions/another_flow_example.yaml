@@ -1,0 +1,15 @@
+# definitions/example_process_flow.yaml
+
+table: process_flow
+fields:
+  - id
+  - name
+  - description
+  - rule_content
+values:
+  - 2
+  - 'Example Process Flow 2'
+  - raw: NOW()
+  - include: 'some_rule.mvel'
+metadata:
+  comment: 'Insert example process flow 2 with rule'
