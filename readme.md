@@ -194,9 +194,17 @@ Ensure YAML definitions adhere to the required structure.
           {
             "type": "object",
             "properties": {
-              "include": { "type": "string" }
+              "include": { "type": "string" },
+              "raw": { "type": "string" }
             },
             "required": ["include"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "raw": { "type": "string" }
+            },
+            "required": ["raw"]
           }
         ]
       }
